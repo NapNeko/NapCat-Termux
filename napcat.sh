@@ -3,13 +3,13 @@ export DEBIAN_FRONTEND=noninteractive
 
 # 安装必要的软件包
 apt-get update && apt-get install -y \
-    libnss3 \   
+    libnss3 \
     libnotify4 \
     libsecret-1-0 \
     libgbm1 \
     libasound2 \
     fonts-wqy-zenhei \
-    gnutls-bin \ 
+    gnutls-bin \
     libglib2.0-dev \
     libdbus-1-3 \
     libgtk-3-0 \
@@ -20,7 +20,7 @@ apt-get update && apt-get install -y \
     ffmpeg \
     unzip \
     jq \
-    curl && \   
+    curl && \
     apt autoremove -y && \
     apt clean && \
     rm -rf \
