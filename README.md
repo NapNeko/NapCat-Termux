@@ -1,37 +1,35 @@
-# 在手机上部署 LLOneBot
-本项目提供了在安卓手机上安装 [LLOneBot](https://github.com/LLOneBot/LLOneBot) 的方法
+# 在手机上部署 NapCat
+本项目提供了在安卓手机上安装 [NapCat](https://github.com/NapNeko/NapCatQQ) 的方法
 使用 [ZeroTermux](https://github.com/hanxinhao000/ZeroTermux) + bookworm + linuxqq 制作
 
 - 基于 Linux QQ
-- 运行内存大于 600M
+- 运行内存大于 100M
 - 支持持久化 QQ 登录状态和数据
 
 # 目录：
 - 1. 安装 Termux
-- 2. 安装 LLOneBot
-   * 2.1 方法1. 使用恢复包安装（推荐）
+- 2. 安装 NapCat
+   * 2.1 方法1. 使用恢复包安装
    * 2.2 方法2. 使用命令安装
-   * 2.3 方法3. 使用一键脚本（推荐）
+   * 2.3 方法3. 使用一键脚本
 - 3. 启动
-- 4. 远程
-- 5. 修改 LLOneBot 配置
+- 5. 修改 NapCat 配置
 
-## 1. 安装 ZeroTermux 和 VncView
+## 1. 安装 ZeroTermux
 前往[hanxinhao000/ZeroTermux](https://github.com/hanxinhao000/ZeroTermux/releases)下载 ZeroTermux 安装包并安装
-安装一个vnc客户端，推荐 [RealVNC](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)
 
 - 注意事项： 
    直接从 GitHub 下载 ZeroTermux 速度可能会很慢，建议使用 [ghproxy.com](https://ghproxy.com) 代理
     
-## 2. 安装 LLOneBot
+## 2. 安装 NapCat
 
-### 2.1 使用恢复包安装（推荐）
+### 2.1 使用恢复包安装
 
 <details>
   <summary>点击展开内容！</summary>
 
 #### 2.1.1 下载恢复包
-前往 [Github releases](https://github.com/LLOneBot/llonebot-termux/releases) 下载 ZeroTermux 恢复包, 并将恢复包放在 手机的 `内部存储/xinhao/data/` 目录
+前往 [Github releases](https://github.com/NapNeko/Termux/releases) 下载 ZeroTermux 恢复包, 并将恢复包放在 手机的 `内部存储/xinhao/data/` 目录
 
 - 注意事项： 
     - 恢复包要放在 `内部存储/xinhao/data/`目录或者 `/sdcard/xinhao/data`目录，否则在恢复容器的时候无法找到恢复包
@@ -48,13 +46,13 @@
     - 如果音量上键无法呼出菜单，说明你的ZeroTermux版本比较旧，可以使用右滑左侧的屏幕边缘来呼出菜单栏
 </details>
 
-### 2.2 使用命令安装（不推荐）
+### 2.2 使用命令安装
 
-[点我](./step-by-step/readme.md)
+[点我](./napcat.sh)
 
 ### 2.3 使用一键脚本（推荐）
    ```shell
-   bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/onekey.sh)"
+   bash -c "$(curl -L https://github.com/NapNeko/NapCat-Termux/raw/main/onekey.sh)"
    ```
 ### 3. 启动
 
@@ -66,18 +64,13 @@ bash bookworm-arm64.sh
 ```
 ```shell
 # 启动
-bash /root/start.sh
+cd NapCat.linux.arm64 && ./napcat.sh
 ```
 
-### 4. 远程登录
-浏览器访问`http://localhost:6099/api/panel/getQQLoginQRcode`
-
-### 5. 修改LLOneBot配置
-浏览器访问`http://localhost:6099/plugin/LLOneBot/iframe.html`
+### 5. 修改NapCat配置
+浏览器访问`http://localhost:6099/webui/login.html`
 
 ## 参考与基础
-[LLOneBot/LLOneBot](https://github.com/LLOneBot/LLOneBot)
-
-[yuuki-nya/chronocat-docker](https://github.com/yuuki-nya/chronocat-docker/blob/main/Dockerfile)
+[NapNeko/NapCatQQ](https://github.com/NapNeko/NapCatQQ)
 
 [yudezeng/yutools](https://gitee.com/yudezeng/yutools)

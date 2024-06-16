@@ -5,26 +5,10 @@ bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/debian.s
 exit
 ```
 
-# 安装 xvfb
+# 安装 NapCat
 
 ```shell
 bash bookworm-arm64.sh
-bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/step-by-step/xvfb.sh)"
-exit
-```
-
-# 安装 liteloader
-
-```shell
-bash bookworm-arm64.sh
-bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/step-by-step/liteloader.sh)"
-exit
-```
-
-# 安装 llonebot
-
-```shell
-bash bookworm-arm64.sh
-bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/step-by-step/llob.sh)"
+bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/napcat.sh)"
 exit
 ```
