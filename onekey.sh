@@ -1,8 +1,8 @@
 # 安装 debian 容器
-bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/debian.sh)"
+bash -c "$(curl -L https://github.com/NapNeko/NapCat-Termux/raw/main/debian.sh)"
 
 # 安装脚本
-curl -o bookworm-arm64/root/napcat.sh https://github.com/LLOneBot/llonebot-termux/raw/main/napcat.sh
+curl -o bookworm-arm64/root/napcat.sh https://github.com/NapCat-Termux/raw/main/napcat.sh
 
 # 启动容器并安装
 unset LD_PRELOAD
