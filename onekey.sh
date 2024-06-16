@@ -2,7 +2,7 @@
 bash -c "$(curl -L https://github.com/NapNeko/NapCat-Termux/raw/main/debian.sh)"
 
 # 安装脚本
-curl -o bookworm-arm64/root/napcat.sh https://github.com/NapCat-Termux/raw/main/napcat.sh
+curl -L -o bookworm-arm64/root/napcat.sh https://github.com/NapNeko/NapCat-Termux/raw/main/napcat.sh
 
 # 启动容器并安装
 unset LD_PRELOAD
