@@ -10,8 +10,7 @@
 - 1. 安装 Termux
 - 2. 安装 NapCat
    * 2.1 方法1. 使用恢复包安装
-   * 2.2 方法2. 使用命令安装
-   * 2.3 方法3. 使用一键脚本
+   * 2.2 方法2. 使用一键脚本
 - 3. 启动
 - 5. 修改 NapCat 配置
 
@@ -46,11 +45,7 @@
     - 如果音量上键无法呼出菜单，说明你的ZeroTermux版本比较旧，可以使用右滑左侧的屏幕边缘来呼出菜单栏
 </details>
 
-### 2.2 使用命令安装
-
-[点我](./napcat.sh)
-
-### 2.3 使用一键脚本（推荐）
+### 2.2 使用一键脚本
    ```shell
    bash -c "$(curl -L https://github.com/NapNeko/NapCat-Termux/raw/main/onekey.sh)"
    ```
@@ -67,8 +62,17 @@ bash bookworm-arm64.sh
 cd NapCat.linux.arm64 && ./napcat.sh
 ```
 
-### 5. 修改NapCat配置
-浏览器访问`http://localhost:6099/webui/login.html`
+### 4. 修改NapCat配置
+
+#### 直接修改
+
+按音量下键，调出目录管理
+编辑 `~/home/bookworm-arm64/root/config/oonbot11_<QQ号>.json` 文件
+
+#### WebUI修改
+
+浏览器访问 `http://localhost:6099/webui/login.html`
+token 位于容器内 /root/NapCat.linux.arm64/config/webui.json 目录
 
 ## 参考与基础
 [NapNeko/NapCatQQ](https://github.com/NapNeko/NapCatQQ)
