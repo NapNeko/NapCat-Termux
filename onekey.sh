@@ -2,7 +2,7 @@
 bash -c "$(curl -L https://github.com/LLOneBot/llonebot-termux/raw/main/debian.sh)"
 
 # 安装脚本
-wget -O bookworm-arm64/root/napcat.sh https://github.com/LLOneBot/llonebot-termux/raw/main/napcat.sh
+curl -o bookworm-arm64/root/napcat.sh https://github.com/LLOneBot/llonebot-termux/raw/main/napcat.sh
 
 # 启动容器并安装
 unset LD_PRELOAD
