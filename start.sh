@@ -45,7 +45,7 @@ update_json() {
 }
 
 ACCOUNT=$(whiptail --inputbox "请输入机器人QQ号:" 8 39 --title "基础设置" 3>&1 1>&2 2>&3)
-if [ -z "$account" ]; then
+if [ -z "$ACCOUNT" ]; then
     echo "机器人QQ号不能为空"
     rm $temp_file
     main
