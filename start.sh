@@ -156,7 +156,7 @@ else
   cat $temp_file | echo > /root/NapCat.linux.arm64/config/onebot11_$ACCOUNT.json
   rm $temp_file
   main
-  cd /root/NapCat.linux.arm64 && ./napcat.sh
+  cd /root/NapCat.linux.arm64 && ./napcat.sh -q $ACCOUNT
 fi
 
 
