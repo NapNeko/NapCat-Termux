@@ -12,7 +12,6 @@
    * 2.1 方法1. 使用恢复包安装
    * 2.2 方法2. 使用一键脚本
 - 3. 启动
-- 5. 修改 NapCat 配置
 
 ## 1. 安装 ZeroTermux
 前往[hanxinhao000/ZeroTermux](https://github.com/hanxinhao000/ZeroTermux/releases)下载 ZeroTermux 安装包并安装
