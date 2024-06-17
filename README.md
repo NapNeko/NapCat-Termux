@@ -51,28 +51,10 @@
    ```
 ### 3. 启动
 
-如果你还没有进入容器
-判断方法输入 `uname -a` ，如果输出信息以 `Android` 结尾，则未进入 proot 容器
-```shell
-# 请先进入容器
-bash bookworm-arm64.sh
-```
 ```shell
 # 启动
-cd NapCat.linux.arm64 && ./napcat.sh
+bash bookworm-arm64.sh
 ```
-
-### 4. 修改NapCat配置
-
-#### 直接修改
-
-按音量下键，调出目录管理
-编辑 `~/home/bookworm-arm64/root/config/oonbot11_<QQ号>.json` 文件
-
-#### WebUI修改
-
-浏览器访问 `http://localhost:6099/webui/login.html`
-token 位于容器内 /root/NapCat.linux.arm64/config/webui.json 目录
 
 ## 参考与基础
 [NapNeko/NapCatQQ](https://github.com/NapNeko/NapCatQQ)
