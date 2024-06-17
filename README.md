@@ -28,7 +28,7 @@
   <summary>点击展开内容！</summary>
 
 #### 2.1.1 下载恢复包
-前往 [Github releases](https://github.com/NapNeko/Termux/releases) 下载 ZeroTermux 恢复包, 并将恢复包放在 手机的 `内部存储/xinhao/data/` 目录
+前往 [Github releases](https://github.com/NapNeko/NapCat-Termux/releases) 下载 ZeroTermux 恢复包, 并将恢复包放在 手机的 `内部存储/xinhao/data/` 目录
 
 - 注意事项： 
     - 恢复包要放在 `内部存储/xinhao/data/`目录或者 `/sdcard/xinhao/data`目录，否则在恢复容器的时候无法找到恢复包
