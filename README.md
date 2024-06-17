@@ -45,6 +45,8 @@
 </details>
 
 ### 2.2 使用一键脚本
+
+如果你使用了2.1的方法，请不要执行该脚本
    ```shell
    bash -c "$(curl -L https://github.com/NapNeko/NapCat-Termux/raw/main/onekey.sh)"
    ```
