@@ -14,7 +14,6 @@
   - 2.1 方法 1. 使用恢复包安装
   - 2.2 方法 2. 使用一键脚本
 - 3. 启动
-- 5. 修改 NapCat 配置
 
 ## 1. 安装 ZeroTermux
 
@@ -61,7 +60,7 @@ bash -c "$(curl -L https://github.com/NapNeko/NapCat-Termux/raw/main/onekey.sh)"
 判断方法输入 `uname -a` ，如果输出信息以 `Android` 结尾，则未进入 proot 容器
 
 ```shell
-# 请先进入容器
+# 启动
 bash bookworm-arm64.sh
 ```
 
