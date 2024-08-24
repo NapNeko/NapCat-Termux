@@ -156,7 +156,8 @@ else
   mv $temp_file /root/NapCat.linux.arm64/config/onebot11_$ACCOUNT.json
   Xvfb :1 -screen 0 1080x760x16 +extension GLX +render &
   sleep 2
-  cd /root/NapCat.linux.arm64 && qq --no-sandox -q $ACCOUNT
+  export DISPLAY=:1
+  cd /root/NapCat.linux.arm64 && qq --no-sandbox -q $ACCOUNT
 fi
 
 
