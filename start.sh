@@ -154,7 +154,9 @@ else
 
   # Output the final JSON to the user
   mv $temp_file /root/NapCat.linux.arm64/config/onebot11_$ACCOUNT.json
-  cd /root/NapCat.linux.arm64 && ./napcat.sh -q $ACCOUNT
+  Xvfb :1 -screen 0 1080x760x16 +extension GLX +render &
+  sleep 2
+  cd /root/NapCat.linux.arm64 && qq --no-sandox -q $ACCOUNT
 fi
 
 
