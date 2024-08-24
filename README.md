@@ -20,7 +20,7 @@
 前往[hanxinhao000/ZeroTermux](https://github.com/hanxinhao000/ZeroTermux/releases)下载 ZeroTermux 安装包并安装
 
 - 注意事项：
-  直接从 GitHub 下载 ZeroTermux 速度可能会很慢，建议使用 [ghproxy.com](https://ghproxy.com) 代理
+  直接从 GitHub 下载 ZeroTermux 速度可能会很慢，建议使用 [ghproxy.com](https://mirror.ghproxy.com/) 代理
 
 ## 2. 安装 NapCat
 
@@ -31,7 +31,7 @@
 
 #### 2.1.1 下载恢复包
 
-前往 [Github releases](https://github.com/NapNeko/Termux/releases) 下载 ZeroTermux 恢复包, 并将恢复包放在 手机的 `内部存储/xinhao/data/` 目录
+前往 [Github releases](https://github.com/NapNeko/NapCat-Termux/releases) 下载 ZeroTermux 恢复包, 并将恢复包放在 手机的 `内部存储/xinhao/data/` 目录
 
 - 注意事项：
   - 恢复包要放在 `内部存储/xinhao/data/`目录或者 `/sdcard/xinhao/data`目录，否则在恢复容器的时候无法找到恢复包
