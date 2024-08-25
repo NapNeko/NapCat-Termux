@@ -51,7 +51,7 @@ EOL
       main
     else
       echo "机器人QQ号: $ACCOUNT"
-      echo ACCOUNT=$ACCOUNT >/root/.env
+      echo ACCOUNT=$ACCOUNT > /root/.env
       # Reverse WebSocket 设置
       reverse_ws_enable=$(whiptail --title "反向 ws 设置" --radiolist "启用反向 WS?" 15 30 2 \
         "true" "" ON \
